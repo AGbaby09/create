@@ -150,12 +150,48 @@ a{
         height: 70dvh;
         border: 1px solid red;
         display: flex;
+        font-family: "Poppins", sans-serif;
     }
 
     #section1>.side{
         width: 50%;
         height: 100%;
         border: 1px solid gold;
+    }
+    #section1>.right>h1{
+        width: 75%;
+        font-size: 4vh;
+    }
+    #section1>.right>p{
+        width: 63%;
+        font-size: 2vh;
+        color: grey;
+    }
+
+    #read{
+        bottom: 10%;
+        left: 13%;
+        width: 15%;
+        height: 7%;
+        border-radius: 50px;
+        box-shadow: 0 5px 10px 0 #d2d2d2;
+        justify-content: space-between;
+    }
+    #read>p{
+        font-family: 'Poppins', sans-serif;
+        margin-left: 15%;
+        font-size: 1.8vh;
+    }
+    #read>button{
+        background-color: rgb(57, 57, 95);
+        height: 95%;
+        width: 24%;
+        border-radius: 50%;
+        border: none;
+        margin-right: 5px;
+        color: white;
+        font-size: 2vh;
+        justify-content: center;
     }
 }
 /* end of PC styling */
