@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +27,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.rev{
+    flex-direction: row-reverse;
 }
 /* end of general styles */
 
@@ -61,7 +64,7 @@ a{
     }
     header>nav>a{
         color: rgb(225, 225, 225);
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1.5vh;
         font-family: 'Poppins', sans-serif;
     }
@@ -148,7 +151,6 @@ a{
     section{
         width: 100%;
         height: 70dvh;
-        border: 1px solid red;
         display: flex;
         font-family: "Poppins", sans-serif;
     }
@@ -156,26 +158,64 @@ a{
     #section1>.side{
         width: 50%;
         height: 100%;
-        border: 1px solid gold;
     }
+
+    #section1>.left>.top, #section1>.left>.bottom{
+        width: 80%;
+        height: 50%;
+        margin-left: 20%;
+        justify-content: space-evenly;
+    }
+    #section1>.left>.top>.card{
+        width: 45%;
+        height: 95%;
+        background-color: rgb(57, 57, 95);
+        border-radius: 20px;
+        overflow: hidden;
+        color: white;
+        font-size: 2vh;
+    }
+    #section1>.left>.top>.card>h1{
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+    }
+    #section1>.left>.top>.card>img, #section1>.left>.bottom>.card>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #section1>.left>.bottom>.card{
+        width: 95%;
+        height: 95%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+
     #section1>.right>h1{
         width: 75%;
         font-size: 4vh;
+        margin-top: 5%;
+        margin-left: 5%;
     }
     #section1>.right>p{
+        margin-top: 3%;
+        line-height: 3.5vh;
         width: 63%;
         font-size: 2vh;
         color: grey;
+        margin-left: 5%;
     }
-
     #read{
-        bottom: 10%;
-        left: 13%;
-        width: 15%;
-        height: 7%;
+        bottom: 20%;
+        width: 30%;
+        height: 10%;
         border-radius: 50px;
         box-shadow: 0 5px 10px 0 #d2d2d2;
         justify-content: space-between;
+        margin-left: 5%;
     }
     #read>p{
         font-family: 'Poppins', sans-serif;
