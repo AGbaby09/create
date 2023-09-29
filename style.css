@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     max-width: 100dvw;
     height:auto;
@@ -519,6 +522,53 @@ a{
     #section4>#map>.mapouter{
         width: 100%;
         height: 100%;
+    }
+
+
+    footer{
+        width: 80%;
+        height: 25dvh;
+        margin: 0 10%;
+        justify-content: space-between;
+    }
+    footer>.logo{
+        justify-content: space-evenly;
+        width: 13%;
+        height: 100%;
+    }
+    footer>.logo>.square{
+        background-color: rgb(57, 57, 95, 0.3);
+        width: 2.5vw;
+        height: 5vh;
+        border-radius: 7px;
+        box-shadow: -10px -10px 0 0 rgb(173, 216, 230, 0.7), 10px 10px 0 0 rgb(70, 130, 180, 0.2) ;
+        filter: grayscale(100%);
+    }
+    footer>.logo>h2{
+        font-size: 2.6vh;
+    }
+    footer>nav{
+        height: 100%;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    footer>nav>a{
+        color: black;
+        font-weight: 700;
+        font-size: 1.5vh;
+        font-family: 'Poppins', sans-serif;
+    }
+    footer>#social{
+        width: 20%;
+        height: 35%;
+        justify-content: space-between;
+    }
+    footer>#social>.icon{
+        width: 20%;
+        height: 70%;
+        border-radius: 50%;
+        font-size: 3vh;
+        box-shadow: 0 5px 10px 0 #d2d2d2;
     }
 }
 /* end of PC styling */
