@@ -4,6 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(57, 57, 95);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(225, 225, 225);  /* creates padding around scroll thumb */
+}
 html{
     scroll-behavior: smooth;
 }
@@ -583,6 +594,9 @@ a{
 @media only screen and (max-width: 500px){
     body{
         background-color: blueviolet;
+    }
+    main, header, section, footer, div, nav{
+        display: none;
     }
 }
 /* end of mobile styling */
