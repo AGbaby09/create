@@ -137,6 +137,7 @@ a{
         border-radius: 50px;
         box-shadow: 0 5px 10px 0 #d2d2d2;
         justify-content: space-between;
+        cursor: pointer;
     }
     #write>p{
         font-family: 'Poppins', sans-serif;
@@ -221,6 +222,7 @@ a{
         box-shadow: 0 5px 10px 0 #d2d2d2;
         justify-content: space-between;
         margin-left: 5%;
+        cursor: pointer;
     }
     #section1 #read>p{
         font-family: 'Poppins', sans-serif;
@@ -325,6 +327,7 @@ a{
         border-radius: 50px;
         justify-content: space-between;
         box-shadow: 0 5px 10px 0 #d2d2d2;
+        cursor: pointer;
     }
     #section2>.card>.book>p{
         font-family: 'Poppins', sans-serif;
@@ -402,6 +405,7 @@ a{
         box-shadow: 0 5px 10px 0 #d2d2d2;
         justify-content: space-between;
         margin-left: 25%;
+        cursor: pointer;
     }
     #section3 #read>p{
         font-family: 'Poppins', sans-serif;
@@ -492,6 +496,7 @@ a{
         border-radius: 50px;
         justify-content: space-between;
         box-shadow: 0 5px 10px 0 #d2d2d2;
+        cursor: pointer;
     }
     #section4>.card>.book>p{
         font-family: 'Poppins', sans-serif;
@@ -569,6 +574,7 @@ a{
         border-radius: 50%;
         font-size: 3vh;
         box-shadow: 0 5px 10px 0 #d2d2d2;
+        cursor: pointer;
     }
 }
 /* end of PC styling */
