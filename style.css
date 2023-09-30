@@ -702,7 +702,7 @@ a{
     #section1>.left>.top{
         width: 100%;
         height: 100%;
-        position: absolute;
+        /* position: absolute; */
         bottom: 0;
         color: white;
         justify-content: space-evenly;
@@ -727,10 +727,10 @@ a{
         box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.6);
     }
     #section1>.left>.bottom{
-        position: absolute;
+        /* position: absolute; */
         width: 100%;
         height: 60%;
-        margin-top: 65vh;
+        top: 165%;
     }
     #section1>.left>.bottom>.card{
         width: 100%;
@@ -752,6 +752,7 @@ a{
     #section1>.right>p{
         margin-top: 2.5%;
         padding: 2% 7%;
+        color: gray;
     }
     #section1>.right>#read{
         position: relative;
