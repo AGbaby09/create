@@ -52,6 +52,9 @@ a{
 
 /* PC styling */
 @media only screen and (min-width: 900px){
+    #header{
+        display: none;
+    }
     header{
         justify-content: space-between;
         height: 9dvh;
@@ -593,9 +596,183 @@ a{
 /* mobile styling */
 @media only screen and (max-width: 500px){
     body{
-        background-color: blueviolet;
+        font-family: "Poppins", sans-serif;
     }
-    main, header, section, footer, div, nav{
+    #header{
+        position: fixed;
+        display: flex;
+        width: 95%;
+        height: 8dvh;
+        margin: 2% 2.5%;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(12.4px);
+        -webkit-backdrop-filter: blur(12.4px);
+        justify-content: space-between;
+        padding: 0 5%;
+        z-index: 10;
+    }
+    #header>i{
+        font-size: 5vh;
+        cursor: pointer;
+    }
+    #header>.logo{
+        width: 30%;
+        height: 100%;
+        justify-content: space-around;
+    }
+    #header>.logo>.square{
+        background-color: rgb(57, 57, 95);
+        width: 30%;
+        height: 50%;
+        border-radius: 7px;
+        box-shadow: -10px -10px 0 0 rgb(173, 216, 230, 0.7), 10px 10px 0 0 rgb(70, 130, 180, 0.2);
+    }
+    #header>.logo>h2{
+        font-size: 2vh;
+    }
+    main{
+        width: 100%;
+        height: 70dvh;
+        overflow: hidden;
+    }
+    main>.canvas{
+        width: 100%;
+        height: 50%;
+        top: 0;
+        border-radius: 0 0 20px 20px;
+        overflow: hidden;
+    }
+    main>.canvas>img{
+        width: 100%;
+        height: 140%;
+        object-fit: cover;
+        
+    }
+    main>.text{
+        bottom: 27%;
+        width: 90%;
+        margin: 0 5%;
+        text-align: center;
+    }
+    main>.text>h1{
+        font-size: 4vh;
+    }
+    main>.text>p{
+        font-size: 1.9vh;
+        color: gray;
+    }
+    main>#write{
+        bottom: 7.5%;
+        width: 60%;
+        height: 15%;
+        margin: 0 20%;
+        border-radius: 50px;
+        box-shadow: 0 5px 10px 0 #d2d2d2;cursor: pointer;
+    }
+    main>#write>p{
+        font-size: 2vh;
+        margin-left: 15%;
+    }
+    main>#write>button{
+        position: absolute;
+        background-color: rgb(57, 57, 95);
+        height: 95%;
+        width: 32%;
+        border-radius: 50%;
+        border: none;
+        right: 1%;
+        color: white;
+        font-size: 2vh;
+        justify-content: center;
+        font-size: 3vh;
+        cursor: pointer;
+    }
+    #section1{
+        border: 1px solid red;
+        width: 100%;
+        height: 80dvh;
+    }
+    #section1>.left{
+        border: 1px solid blue;
+        height: 30%;
+        border-radius: 20px;
+        background-color: rgb(57, 57, 95);
+    }
+    #section1>.left>.top{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        color: white;
+        justify-content: space-evenly;
+    }
+    #section1>.left>.top>.card{
+        width: 45%;
+        height: 90%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    #section1>.left>.top>.card>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #section1>.left>.top>.card>h1{
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+    }
+    #section1>.left>.top>:nth-child(2){
+        box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.6);
+    }
+    #section1>.right{
+        /* border: 1px solid red; */
+        text-align: center;
+        margin-top: 5%;
+    }
+    #section1>.right>h1{
+        font-size: 2.5vh;
+    }
+    #section1>.right>p{
+        margin-top: 2.5%;
+        padding: 2% 7%;
+    }
+    #section1>.right>#read{
+        position: relative;
+        width: 40%;
+        height: 7dvh;
+        margin:2.5% 30%;
+        justify-content: space-between;
+        border-radius: 50px;
+        box-shadow: 0 5px 10px 0 #d2d2d2;cursor: pointer;
+    }
+    #section1>.right>#read>button{
+        background-color: rgb(57, 57, 95);
+        height: 95%;
+        width: 32%;
+        border-radius: 50%;
+        border: none;
+        margin-right: 1%;
+        color: white;
+        font-size: 2vh;
+        justify-content: center;
+        font-size: 3vh;
+        cursor: pointer;
+    }
+    #section1>.right>#read>p{
+        margin-left: 15%;
+    }
+
+    
+
+
+    #section2, #section3, #section4, footer, #support, main>header{
+        display: none;
+    }
+    .footer{
         display: none;
     }
 }
