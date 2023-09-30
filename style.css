@@ -691,12 +691,10 @@ a{
         cursor: pointer;
     }
     #section1{
-        border: 1px solid red;
         width: 100%;
         height: 80vh;
     }
     #section1>.left{
-        border: 1px solid blue;
         height: 30%;
         border-radius: 20px;
         background-color: rgb(57, 57, 95);
@@ -731,9 +729,17 @@ a{
     #section1>.left>.bottom{
         position: absolute;
         width: 100%;
-        height: 50%;
-        border: 1px solid red;
-        top: 64.5vh;
+        height: 60%;
+        transform: translateY(440%);
+    }
+    #section1>.left>.bottom>.card{
+        width: 100%;
+        height: 100%;
+    }
+    #section1>.left>.bottom>.card>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     #section1>.right{
         /* border: 1px solid red; */
